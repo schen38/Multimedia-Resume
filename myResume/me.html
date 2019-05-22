@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" >
+<link rel="stylesheet" href="me.css" type="text/css" media="screen">
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace("active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += "active";
+}
+document.getElementById("defaultOpen").click();
+</script>
+</head>
+<body>
+<div class="main">
+<div class="title"><p>陳聖樺Sheng-Hua Chen</p></div>
+<hr>
+
+<div class="tab">
+  <a href="me.html"><button class="tablinks" >Home</button></a>
+  <button class="tablinks" onclick="openCity(event, 'info')" id="defaultOpen">Personal Info</button>
+  <button class="tablinks" onclick="openCity(event, 'skills')">Skills</button>
+  <button class="tablinks" onclick="openCity(event, 'experiences')">Experiences</button>
+</div>
+
+
+<div id="info" class="tabcontent">
+  <h2>中原大學-資管系CYCU-IM</h2>
+  <img src="me.png" class="me">
+  <div class="txtme">
+	 <p>"It is very simple to be happy, but it is very difficult to be simple."</p>
+  </div>
+    <div class="column2">
+      <div class="contents">
+        <h3>聯絡資訊Contact Info</h3>
+        <p><a href="mailto:schen38@mail.greenriver.edu">E-MAIL</a></p>
+        <p><a href="https://www.facebook.com/mitch.chen.9">FB</a></p>
+        <p>電話:0970080998</p>
+        <a href="https://sticky2020.github.io/Personal-Website/myself/myself.html"><button type="button">連到個人網頁</button></a>
+      </div>
+    </div>
+</div>
+<div id="skills" class="tabcontent">
+  <div class="skill">
+    <h2>我的技能My Skills</h2>
+    <p>Microsoft Office</p>
+    <div class="containers">
+      <div class="skills html">80%</div>
+    </div>
+
+    <p>HTML，CSS，Javascript</p>
+    <div class="containers">
+      <div class="skills css">70%</div>
+    </div>
+
+    <p>Adobe Illustrator</p>
+    <div class="containers">
+      <div class="skills js">60%</div>
+    </div>
+
+    <p>Adobe Photoshop</p>
+    <div class="containers">
+      <div class="skills php">60%</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div class="contents">
+        <h3>其他技能Other Skills</h3>
+        <p>IELTS:</p>
+        <p>Overall 6.0</p>
+      </div>
+    </div>
+    <div class="column">
+      <div class="contents">
+        <h3>社團經歷</h3>
+        <p>2016-2017台灣文化社公關PR of the Taiwanese Culture Association</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="experiences" class="tabcontent">
+<div class="contents" style="background-color: #474e5d; width:100% ">
+  <h3 style="color:white">近年經歷My Experiences</h3>
+  <p style="color:white">我的大學近年歷程</p>
+
+  <div class="timeline">
+    <div class="container left">
+      <div class="content">
+        <h2>2018</h2>
+        <p>離開美國回到台灣，準備考轉學考，同時也在空閒時間打工，最後順利以正取1進入中原資管三年級。</p>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>2017</h2>
+        <p>就讀社區大學二年級，開始規劃社區大學畢業後的未來。</p> 
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>2016</h2>
+        <p>進入Greeb River社區大學，成為大學新鮮人，當時還懵懵懂懂，努力熟悉新環境。</p> 
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>2015</h2>
+        <p>離開台灣，前往美國就讀語言學校，展開一個人的新生活。</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
