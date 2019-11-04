@@ -5,28 +5,32 @@
 <meta charset="utf-8" >
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <style>
-	html{
-    		max-width: 100vw;
-    		width: 100vw;
-    		max-height: 100vh;
-    		height: 100vh;
-  	}
 	body{
 		background-image: url(img/back.jpg);
 		font-family: Impact,Microsoft JhengHei; 
 		text-decoration: none;
-		max-width: 100vw;
-   		width: 100vw;
-    		max-height: 100vh;
-    		height: 100vh;
-	}
+    }
+  .myh2{
+    font-size: 1.5vmax;
+  }
+  .myh4{
+    font-size: 1.2vmax;
+  }
+  .myh5{
+    font-size: 1.1vmax;
+  }
+  .myp {
+    font-size: 1.0vmax;
+  }
 	.main{
 		margin: 4vh auto;
 		background-color: white;
 		max-width: 95vw;
-		border:5px black solid;
+		border:0.2vmax black solid;
 	}
 	.frame{
+    max-width: 90vw;
+    width: 90vw;
 		margin: 0px auto;/*div對齊效果*/
   		text-align: center;/*display: inline對齊效果*/
   		font-weight: 500;
@@ -38,29 +42,29 @@
 		vertical-align: top;/*就算個個div行數不同，也一律向上對齊*/ 
 	}
 	.left{
-		margin:45px 60px;
-		width:35%;
-		max-width: 35%;
+		margin:7vh 1vw;
+		width:40vw;
+		max-width: 40vw;
 		text-align: left;
-		border-right: 3px black solid;
+		border-right: 0.2vmax black solid;
 	}
 	.name{
 		font-weight: 600;
-		font-size: 35px;
+		font-size: 2.1vmax;
 	}
 	.me{
-		width:110px;
-		height:110px;
+		width:6.6vmax;
+		height:6.6vmax;
 		border-radius: 50%;
-		border: 3px solid black;
+		border: 0.2vmax solid black;
 	}
 	.right{
-		margin:45px 60px;
-		width:40%;
-		max-width: 40%;
+		margin:7vh 1vw;
+		width:45vw;
+		max-width: 45vw;
 	}
 	.card{
-		margin-top: 15px;
+		margin-top: 0.9vmax;
 		width: 80%;
 		max-width: 80%;
 	}
@@ -71,30 +75,32 @@
 	.git{
 		width: 100%;
 		max-width: 100%;
-		margin-top: 30px;
+		margin-top: 2vmax;
 	}
 	.skills{
-		margin-top: 30px;
+    max-width: 70%;
+    width: 70%;
+		margin-top: 2vmax;
 	}
 	.icon{
-		width: 50px;
-		height: 50px;
+		width: 3vmax;
+		height: 3vmax;
 	}
 	.hobby{
-		width: 30px;
-		height: 30px;
+		width: 2vmax;
+		height: 2vmax;
 	}
 	.percent{
-		margin: 30px auto;
+		margin: 2vmax auto;
 		width:100%;
 		max-width: 100%;
-		font-size: 15px;
+		font-size: 0.9vmax;
 	}
 	.percent div{
-		width:80px;
+		width:5vmax;
 	}
 	.scontainer {
-		height:15px;
+		height:0.9vmax;
   		background-color: grey;
   		width: 100%;
   		margin: 0 auto;
@@ -102,13 +108,12 @@
 	}
 
 	.skill {
-		height:15px;
+		height:0.9vmax;
  		text-align: right;
-  		margin-left: -15px;
-  		font-size: 14px;
+  		font-size: 0.88vmax;
   		font-family: sans-serif; 
   		color: white;
- 		max-width: 100%;
+ 		max-width: 70%;
 	}
 
 	.adobe {width: 90%; background-color: #00aacc;}
@@ -120,12 +125,12 @@
 	.timeline::after {
   		content: '';
   		position: absolute;
-  		width: 6px;
+  		width: 0.33vmax;
   		background-color: black;
   		top: 0;
   		bottom: 0;
   		left: 50%;
-  		margin-left: -3px;
+  		margin-left: -0.2vmax;
 	}
 
 /* Container around content */
@@ -139,12 +144,12 @@
 	.tcontainer::after {
   		content: '';
   		position: absolute;
-  		width: 25px;
-  		height: 25px;
-  		right: -17px;
+  		width: 1.5vmax;
+  		height: 1.5vmax;
+  		right: -1vmax;
   		background-color: white;
-  		border: 4px solid #00aacc;
-  		top: 15px;
+  		border: 0.26vmax solid #00aacc;
+  		top: 0.9vmax;
   		border-radius: 50%;
   		z-index: 1;
 	}
@@ -162,12 +167,12 @@
   		content: " ";
   		height: 0;
  		position: absolute;
-  		top: 22px;
+  		top: 1.3vmax;
   		width: 0;
   		z-index: 1;
-  		right: 30px;
+  		right: 2vmax;
   		border: medium solid black;
-  		border-width: 10px 0 10px 10px;
+  		border-width: 0.6vmax 0 0.6vmax 0.6vmax;
   		border-color: transparent transparent transparent white;
 	}
 
@@ -176,32 +181,32 @@
   		content: " ";
   		height: 0;
   		position: absolute;
-  		top: 22px;
+  		top: 1.3vmax;
   		width: 0;
   		z-index: 1;
-  		left: 30px;
+  		left: 2vmax;
   		border: medium solid black;
-  		border-width: 10px 10px 10px 0;
+  		border-width: 0.6vmax 0.6vmax 0.6vmax 0;
   		border-color: transparent white transparent transparent;
 	}
 
 /* Fix the circle for containers on the right side */
 	.tright::after {
-  		left: -16px;
+  		left: -1vmax;
 	}
 
 /* The actual content */
 	.content {
-  		padding: 20px 30px;
+  		padding: 1.2vmax 2vmax;
   		background-color: white;
   		position: relative;
-  		border-radius: 6px;
+  		border-radius: 0.33vmax;
       max-height: 100%;
       max-width: 100%;
 	}
   .content img{
-    width: 100px;
-    height: 150px;
+    width: 6vmax;
+    height: 9vmax;
     transition: all 1.5s ease;
   }
   .content img:hover {
@@ -209,30 +214,30 @@
   }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 36vmax) {
   /* Place the timelime to the left */
   	.timeline::after {
-  		left: 31px;
+  		left: 2vmax;
   	}
   
   /* Full-width containers */
   	.tcontainer {
   		width: 100%;
-  		padding-left: 70px;
-  		padding-right: 25px;
+  		padding-left: 4.2vmax;
+  		padding-right: 1.5vmax;
   	}
   
   /* Make sure that all arrows are pointing leftwards */
   	.tcontainer::before {
-  		left: 60px;
+  		left: 3.6vmax;
  	 	border: medium solid black;
-  		border-width: 10px 10px 10px 0;
+  		border-width: 0.6vmax 0.6vmax 0.6vmax 0;
   		border-color: transparent white transparent transparent;
   	}
 
   /* Make sure all circles are at the same spot */
   	.tleft::after, .tright::after {
-  		left: 15px;
+  		left: 0.9vmax;
   	}
   
   /* Make all right containers behave like the left ones */
@@ -250,22 +255,22 @@
   		<br><br>
   		<p class="name">陳聖樺  Sheng-Hua Chen</p>
   		<img src="img/school.png" class="icon">
-  		<h4>中原大學-資管系</h4>
-  		<p>CYIM</p>
+  		<p class="myh4">中原大學-資管系</p>
+  		<p class="myp">CYIM</p>
   		<hr width="70%" align="left" color="black">
   		<div class="card">
-  			<h5 class="card-header"><img src="img/education.jpg" class="icon">求學經歷  Education</h5>
+  			<p class="card-header myh5"><img src="img/education.jpg" class="icon">求學經歷  Education</p>
   			<div class="card-body">
-  				<p class="card-text"><h5>2015/09-2017/12</h5>Green River College</p>
+  				<p class="card-text"><p class="myh5">2015/09-2017/12</p>Green River College</p>
   				<p class="card-text" style="font-size: 13px;">有幸到美國西雅圖留學3年，學習歐美的風氣、文化，及多元文化下的合作與獨立生活，遇見各樣的人事物，使自己不侷限思想，拓展視野。</p>
   				<hr width="70%" align="left" color="black">
-  				<p class="card-text"><h5>高中  High School</h5>復旦高中  Fudan High School</p>
+  				<p class="card-text"><p class="myh5">高中  High School</p>復旦高中  Fudan High School</p>
   			</div>
   		</div>
   		<hr width="70%" align="left" color="black">
   		<img src="img/aboutme.png" class="icon">
-  		<h5>關於我  About Me</h5>
-  		<p>個性偏外向，樂於與人交談，喜歡美式文化，享受寫<br>完程式後的成就感，但更喜歡將創意及程式能力結合，<br>對於行銷與設計都亦有強烈興趣，喜歡跳脫舒適圈，<br>樂於嘗試不同的挑戰，在20出頭的年紀，平常空閒時<br>間讓自己嘗試各種新事物，學習新知識，也上網搜尋<br>前端相關、SEO等知識、閱讀英文雜誌/報紙等，並累<br>積作品練習寫程式/網頁、PS/AI等，不斷的充實自我。
+  		<p class="myh5">關於我  About Me</p>
+  		<p class="myp">個性偏外向，樂於與人交談，喜歡美式文化，享受寫<br>完程式後的成就感，但更喜歡將創意及程式能力結合，<br>對於行銷與設計都亦有強烈興趣，喜歡跳脫舒適圈，<br>樂於嘗試不同的挑戰，在20出頭的年紀，平常空閒時<br>間讓自己嘗試各種新事物，學習新知識，也上網搜尋<br>前端相關、SEO等知識、閱讀英文雜誌/報紙等，並累<br>積作品練習寫程式/網頁、PS/AI等，不斷的充實自我。
   		</p>
   		<div class="git">
   			<img src="img/github.png" class="icon">
@@ -273,109 +278,109 @@
   		</div>
   		<hr width="70%" align="left" color="black">
   		<div class="card">
-  			<h5 class="card-header"><img src="img/contact.png" class="icon">聯絡資訊  Contact Info</h5>
+  			<p class="card-header myh5"><img src="img/contact.png" class="icon">聯絡資訊  Contact Info</p>
   			<div class="card-body">
-    			<h5 class="card-title">聯絡電話  Phone:</h5>
-    			<p class="card-text">+886 970080998</p>
-    			<h5 class="card-title">E-mail:</h5>
-    			<p class="card-text">schen38@mail.greenriver.edu</p>
+    			<p class="card-title myh5">聯絡電話  Phone:</p>
+    			<p class="card-text myp">+886 970080998</p>
+    			<p class="card-title myh5">E-mail:</p>
+    			<p class="card-text myp">schen38@mail.greenriver.edu</p>
   			</div>
   		</div>
   		<hr width="70%" align="left" color="black">
   		<div class="card">
-  			<h5 class="card-header"><img src="img/hobby.jpg" class="icon">興趣嗜好  Passion & Hobbies</h5>
+  			<p class="card-header myh5"><img src="img/hobby.jpg" class="icon">興趣嗜好  Passion & Hobbies</p>
   			<div class="card-body">
-  				<p class="card-text"><img src="img/basketball.png" class="hobby">Basketball</p>
-  				<p class="card-text"><img src="img/rap.png" class="hobby">Rap/R&B Music</p>
-  				<p class="card-text"><img src="img/traveling.jpg" class="hobby">Traveling</p>
-  				<p class="card-text"><img src="img/reading.png" class="hobby">Reading</p>
+  				<p class="card-text myp"><img src="img/basketball.png" class="hobby">Basketball</p>
+  				<p class="card-text myp"><img src="img/rap.png" class="hobby">Rap/R&B Music</p>
+  				<p class="card-text myp"><img src="img/traveling.jpg" class="hobby">Traveling</p>
+  				<p class="card-text myp"><img src="img/reading.png" class="hobby">Reading</p>
   			</div>
   		</div>
   	</div>
   	<div class="right">
   		<div class="skills">
   			<img src="img/codingicon.png" class="icon">
-  			<p>Programming    Skills</p>
-  			<h5>程式技能</h5>
+  			<p class="myp">Programming    Skills</p>
+  			<p class="myh5">程式技能</p>
   		</div>
   		<div class="percent">
   			<div>
-  				<center><p>HTML/CSS</p></center>
-  				<center><p>網頁排版/ Bootstrap、撰寫</p></center>
+  				<center><p class="myp">HTML/CSS</p></center>
+  				<center><p class="myp">網頁排版/ Bootstrap、撰寫</p></center>
   				<div class="circleChart" id="0"></div>
   			</div>
   			<div>
-  				<center><p>JavaScript</p></center>
-  				<center><p>基礎撰寫、使用能力</p></center>
+  				<center><p class="myp">JavaScript</p></center>
+  				<center><p class="myp">基礎撰寫、使用能力</p></center>
   				<div class="circleChart" id="1"></div>
   			</div>
   			<div>
-  				<center><p>Python</p></center>
-  				<center><p>具備基礎程式能力</p></center>
+  				<center><p class="myp">Python</p></center>
+  				<center><p class="myp">具備基礎程式能力</p></center>
   				<div class="circleChart" id="2"></div>
   			</div>
   			<div>
-  				<center><p>.NET</p></center>
-  				<center><p>基礎程式設計、撰寫</p></center>
+  				<center><p class="myp">.NET</p></center>
+  				<center><p class="myp">基礎程式設計、撰寫</p></center>
   				<div class="circleChart" id="3"></div>
   			</div>
   			<div>
-  				<center><p>mySQL</p></center>
-  				<center><p>網頁資料庫連接、資料庫程式語法撰寫/正規化概念</p></center>
+  				<center><p class="myp">mySQL</p></center>
+  				<center><p class="myp">網頁資料庫連接、資料庫程式語法撰寫/正規化概念</p></center>
   				<div class="circleChart" id="4"></div>
   			</div>
 		</div>
 		<hr color="black">
 		<div class="skills">
 			<img src="img/otherskill.png" class="icon">
-  			<p>Other Skills</p>
-  			<h5>其他技能</h5>
+  			<p class="myp">Other Skills</p>
+  			<p class="myh5">其他技能</p>
   			<div class="skills">
-    			<p>Adobe Photoshop/Illustrator</p>
-    			<p>圖片設計</p>
+    			<p class="myp">Adobe Photoshop/Illustrator</p>
+    			<p class="myp">圖片設計</p>
     			<div class="scontainer">
-      				<div class="skill adobe"><p>70%</p></div>
+      				<div class="skill adobe"><p class="myp">70%</p></div>
     			</div>
     			<hr color="black">
     			<img src="img/english.png" class="icon">
-    			<p>English Proficiency</p>
-    			<h5 class="skills">英文能力</h5>
-    			<p class="skills">IELTS    :    6.0</p>
-    			<p >GRE    :    314     ,    AWA    3.5</p>
+    			<p class="myp">English Proficiency</p>
+    			<p class="myh5">英文能力</p>
+    			<p class="myp">IELTS    :    6.0</p>
+    			<p class="myp">GRE    :    314     ,    AWA    3.5</p>
     		</div>
 		</div>
 		<hr color="black">
 		<img src="img/work.png" class="icon">
-  		<p>Work    Experiences</p>
-  		<h5>工作經驗</h5>
-  		<p>2018/03-2019/01斜角巷</p>
-  		<p>賺取生活費，並學習服務業的態度與管理。</p>
+  		<p class="myp">Work    Experiences</p>
+  		<p class="myh5">工作經驗</p>
+  		<p class="myp">2018/03-2019/01斜角巷</p>
+  		<p class="myp">賺取生活費，並學習服務業的態度與管理。</p>
   		<hr color="black">
   		<div class="timeline">
   			<div class="tcontainer tleft">
     			<div class="content">
-      				<h2>2014/09-2015/03</h2>
-      				<p>離開高中，前往西雅圖讀語言學校，認識來自各地非英語國家人士，其中不乏優秀的朋友/長輩，像是哥倫比亞籃球國家隊選手/日本Hitachi經理等等，學習各國/洲文化差異與特色，讓當時才17歲的我大開眼界，學而知不足。</p>
+      				<p class="myh2">2014/09-2015/03</p>
+      				<p class="myp">離開高中，前往西雅圖讀語言學校，認識來自各地非英語國家人士，其中不乏優秀的朋友/長輩，像是哥倫比亞籃球國家隊選手/日本Hitachi經理等等，學習各國/洲文化差異與特色，讓當時才17歲的我大開眼界，學而知不足。</p>
     			</div>
   			</div>
   			<div class="tcontainer tright">
     			<div class="content">
-      				<h2>2016/09-2017/06</h2>
-      				<p>就讀Green River College，擔任台灣文化社(Taiwanese Culture Association)公關，舉辦各式活動，例如:迎新烤肉、包水餃活動、三大節慶活動等等，一方面除了凝聚校園內台灣人感情，同時也讓外國人能夠體驗台灣文化。</p>
+      				<p class="myh2">2016/09-2017/06</p>
+      				<p class="myp">就讀Green River College，擔任台灣文化社(Taiwanese Culture Association)公關，舉辦各式活動，例如:迎新烤肉、包水餃活動、三大節慶活動等等，一方面除了凝聚校園內台灣人感情，同時也讓外國人能夠體驗台灣文化。</p>
     			</div>
   			</div>
   			<div class="tcontainer tleft">
     			<div class="content">
-      			<h2>2018/09-2019/01</h2>
-            <img src="img/certificatem.jpg" style="filter: grayscale(0.1); border:2px solid black;margin: 15px auto;">
-      			<p>於中原大學資管系的第一學期，修讀管理學課程，課程中參與志工服務，幫助真善美社會福利基金會內的憨兒小朋友們(屬輕-中度)體驗我們規劃的活動，希望能帶給他們一些生活的樂趣，也對於這個族群有更多的認識。</p>
+      			<p class="myh2">2018/09-2019/01</p>
+            <img src="img/certificatem.jpg" style="filter: grayscale(0.1); border:0.1vmax solid black;margin: 15px auto;">
+      			<p class="myp">於中原大學資管系的第一學期，修讀管理學課程，課程中參與志工服務，幫助真善美社會福利基金會內的憨兒小朋友們(屬輕-中度)體驗我們規劃的活動，希望能帶給他們一些生活的樂趣，也對於這個族群有更多的認識。</p>
     			</div>
   			</div>
         <div class="tcontainer tright">
           <div class="content">
-            <h2>2018/09-2019/01</h2>
-            <img src="img/certificates.jpg" style="filter: grayscale(0.1); border:2px solid black;margin: 15px auto;">
-            <p>修讀中原大學資管系的軟體專案管理課程，於期末舉辦夜市擺攤活動，試著讓當地居民及逛夜市的人們體驗科技對於生活所帶來的改變，並於共25組的競賽中滿意度問卷調查及參與人數獲得第三名。</p>
+            <p class="myh2">2018/09-2019/01</p>
+            <img src="img/certificates.jpg" style="filter: grayscale(0.1); border:0.1vmax  solid black;margin: 15px auto;">
+            <p class="myp">修讀中原大學資管系的軟體專案管理課程，於期末舉辦夜市擺攤活動，試著讓當地居民及逛夜市的人們體驗科技對於生活所帶來的改變，並於共25組的競賽中滿意度問卷調查及參與人數獲得第三名。</p>
           </div>
         </div>
   		</div>
