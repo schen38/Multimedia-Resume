@@ -1,0 +1,383 @@
+<style>
+<style>
+	body{
+		background: #adbed2;
+		font-family: Microsoft JhengHei; 
+		text-decoration: none;
+    font-size: 0.9vmax;
+    color: #030305;
+    }
+  .divName{
+    width: 100%;
+    max-width:100%;
+    height: 4vmax;
+    background-color: #ffffff;
+  }
+  .footer{
+    width: 100%;
+    max-width:100%;
+    height: 5.4vmax;
+    margin-bottom: 0;
+    background-color: #ffffff;
+    padding-top: 0.6vmax;
+  }
+  .email{
+    width: 2vmax;
+    height: 2vmax;
+    margin: 0.5vmax 0.5vmax 0 0.5vmax;
+  }
+  .nameM{
+    margin: 0 0 0 25vmax;
+    height: 3.5vmax;
+  }
+  .namescript{
+    width: 10vmax;
+    max-width: 10vmax;
+  }
+
+	.main{
+		margin: 2vh auto ;
+		background-color: white;
+    border:1px solid #f2f4ef;
+		max-width: 70vw;
+	}
+	.frame{
+		  margin: 0px auto;
+  		text-align: center;
+  		font-weight: 500;
+	}
+	.frame div{
+	 	display: inline-block;
+		vertical-align: top;
+	}
+  .a1{
+    width: 100%;
+    max-width: 100%;
+    padding-top: 2vmax;
+    transition: height 2s;
+    background: #ffffff;
+  }
+  .myImage{
+    margin-top: 1vmax;
+    width:12vmax;
+    height:12vmax;
+    max-width: 12vmax;
+    max-height: 12vmax;
+  }
+	.me{
+    -webkit-filter:saturate(115%) grayscale(5%);
+    filter:saturate(115%) grayscale(5%);
+    position:absolute;
+    float: left;
+    margin: 0 5vmax;
+		width:12vmax;
+		height:12vmax;
+		border-radius: 50%;
+		border: 0.1vmax solid #030305;
+    z-index: 2;
+	}
+  .meBack {
+    -webkit-filter:blur(10px);
+    filter: blur(10px);
+    position:absolute;
+    z-index: 1;
+    float: left;
+    margin: -0.5vmax 4.5vmax;
+    width:13vmax;
+    height:13vmax;
+    border-radius: 50%;
+  }
+  .info1{
+    width:40%;
+    max-width: 40%;
+    text-align: left;
+  }
+  .info1_1{
+    margin: 2vmax 6vmax 0 6vmax;
+    width: 50vmax
+    max-width: 50vmax;
+  }
+  .info2{
+    margin-top:1vmax;
+    margin-right: 4vmax;
+    width:20vmax;
+    max-width: 20vmax;
+    text-align: left;
+  }
+  .contact{
+    width: 90%;
+    max-width: 90%;
+    margin:0.5vmax;
+  }
+	.card{
+		width: 100%;
+		max-width: 100%;
+    color:#030305;
+    background: #ffffff;
+	}
+  .card-header{
+    background: #f2f4ef;
+  }
+  .info3{
+    overflow: hidden;
+    height: 10vmax;
+    width:75%;
+    max-width: 75%;
+    text-align: left;
+    margin-bottom: 1vmax;
+  }
+  .arrow{
+      content:"";
+      border:8px solid #030305;
+      border-bottom:none;
+      border-right-color:transparent;
+      border-left-color:transparent;
+      position:relative;
+      border-radius:2px;
+      cursor:pointer;
+  }
+  .rotate {
+    height: 0.1vmax;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+  } 
+  .rotate.up {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+  }
+  .a2Left{
+    margin:1vmax auto 1vmax 0;
+    text-align: left;
+    padding-right: 4vmax;
+    max-width:41%; 
+    width:41%;
+    border-right:1px solid #030305;
+  }
+  .a2Right{
+    text-align: left;
+    margin:2vmax auto 2vmax 4vmax;
+    max-width:35%; 
+    width:35%;
+  }
+  .btn {
+		text-decoration:none;
+		color: white;
+    font-size: 0.8vmax;
+	}
+
+	.git{
+		width: 100%;
+		max-width: 100%;
+		margin-bottom: 1vmax;
+	}
+  .icon{
+    width: 3vmax;
+    height: 3vmax;
+    margin: 0.3vmax;
+  }
+  .divH{
+    margin: 0.3vmax 0.3vmax 0 0.3vmax;
+  }
+  .hobby{
+    width: 1.9vmax;
+    height: 1.9vmax;
+    margin: 0.5vmax;
+  }
+  .percent{
+    margin: 2vmax auto;
+    width:100%;
+    max-width: 100%;
+  }
+  .codingSkill{
+    width:10vmax;
+    margin: 0vmax 1.5vmax 2vmax 0.4vmax;
+  }
+	.skill1{
+    max-width: 80%;
+    width: 80%;
+		margin-top: 1vmax;
+	}
+  .skills{
+    max-width: 80%;
+    width: 80%;
+    margin-top: 1vmax;
+    margin-bottom: 2vmax;
+  }
+  .Chart div{
+    width: 3.5vmax;
+    max-width: 3.5vmax;
+    height: 3.5vmax;
+    max-height: 3.5vmax;
+  }
+	.scontainer {
+		height:1vmax;
+  	background-color: #f2f4ef;
+  	width: 100%;
+  	margin: 0 auto;
+  	text-align: left;
+    font-size: 0.7vmax;
+	}
+	.skill {
+    height:1vmax;
+ 		text-align: right;
+  	color: white;
+ 		max-width: 80%;
+    width: 80%; 
+    background-color: #00aacc;
+    animation-duration:2s;
+  }
+  .run{
+    animation-name: run;
+  }
+  @keyframes run{
+    from{
+        width: 0%; 
+    }
+    to{
+        width: 90%; 
+    }
+  }
+
+	.timeline {
+  		position: relative;
+  		max-width: 100%;
+      width: 100%;
+  		margin: 1.5vmax auto 3vmax auto;
+      height: 83vmax;
+      max-height: 105vmax;
+      z-index: 0;
+	}
+	.timeline::after {
+  		content: '';
+  		position: absolute;
+  		width: 0.1vmax;
+  		background-color: #030305;
+  		top: 0;
+  		bottom: 0;
+  		left: 50%;
+  		margin-left: -0.2vmax;
+      z-index: 0;
+	}
+
+	.tcontainer {
+  		position: relative;
+  		width: 50%;
+      height: 20vmax;
+	}
+
+	.tcontainer::after {
+  		content: '';
+  		position: absolute;
+  		width: 1.5vmax;
+  		height: 1.5vmax;
+  		right: -1vmax;
+  		background-color: white;
+  		border: 0.26vmax solid #00aacc;
+  		top: 0.9vmax;
+  		border-radius: 50%;
+  		z-index: 0;
+	}
+	.tleft {
+      left: -1.5%;
+	}
+
+	.tright {
+  		left: 50.5%;
+	}
+
+	.tleft::before {
+  		content: " ";
+  		height: 0;
+ 		  position: absolute;
+  		top: 1vmax;
+  		width: 0;
+  		z-index: 0;
+  		right: 1vmax;
+  		border: medium solid #030305;
+  		border-width: 0.4vmax 0 0.4vmax 0.4vmax;
+  		border-color: transparent transparent transparent #030305;
+	}
+
+	.tright::before {
+  		content: " ";
+  		height: 0;
+  		position: absolute;
+  		top: 1vmax;
+  		width: 0;
+  		z-index: 0;
+  		left: 1vmax;
+  		border: medium solid #030305;
+  		border-width: 0.4vmax 0.4vmax 0.4vmax 0;
+  		border-color: transparent #030305 transparent transparent;
+	}
+
+	.tright::after {
+  		left: -1vmax;
+      z-index: 0;
+	}
+
+	.content1, .content3 {
+      visibility: hidden;
+      margin-right: 2vmax;
+  		padding: 1.2vmax 1vmax;
+  		background-color: #f2f4ef;
+  		position: relative;
+  		border-radius: 0.33vmax;
+      max-width: 100%;
+	}
+  .content2, .content4 {
+      visibility: hidden;
+      margin-left: 2vmax;
+      padding: 1.2vmax 1vmax;
+      background-color: #f2f4ef;
+      position: relative;
+      border-radius: 0.33vmax;
+      max-width: 100%;
+  }
+  .certificate{
+    filter: grayscale(0.1); 
+    border:0.8vmax solid #ffffff;
+    border-radius: 2px;
+    margin: 1vmax auto;
+    width: 8vmax;
+    height: 11vmax;
+    transition: all 1.5s ease;
+  }
+  .certificate:hover {
+    transform: scale(2,2);
+    z-index: 2;
+  }
+
+	@media screen and (min-width: 400px) and (max-width: 700px) {
+    .footer{
+      height: 10vmax;
+    }
+    .timeline{
+      height: 250vmax;
+    }
+  	.timeline::after {
+  		left: 2vmax;
+      z-index: 0;
+  	}
+    .tcontainer {
+      position: relative;
+      width: 50%;
+      height: 40vmax;
+    }
+  	.tcontainer::before {
+  		left: 3.6vmax;
+ 	 	  border: medium solid #030305;
+  		border-width: 0.6vmax 0.6vmax 0.6vmax 0;
+  		border-color: transparent white transparent transparent;
+      z-index: 0;
+  	}
+
+  	.tleft::after, .tright::after {
+  		left: 0.9vmax;
+      z-index: 0;
+  	}
+  
+</style>
+</style>
