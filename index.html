@@ -1,254 +1,280 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8" >
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="css/resume.css">
-<style type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" >
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/resume.css">
+  <title>陳聖樺的個人履歷</title>
+  <style type="text/css">
     body{
-    background: #adbed2;
-    font-family: Microsoft JhengHei; 
-    text-decoration: none;
-    font-size: 0.9vmax;
-    color: #030305;
+      background: #adbed2;
+      font-family: Microsoft JhengHei; 
+      text-decoration: none;
+      font-size: 0.9vmax;
+      color: #030305;
     }
-</style>
+  </style>
 </head>
 
 <body>
-    <div class="divName"><img src="img/nameM.png" class="nameM"><img src="img/name.png" class="namescript"></div>
-<div class="main">
-	<div class="frame">
-    <div class="a1">
+  <div class="divName" id="top"><img src="img/nameM.png" class="nameM"><img src="img/name.png" class="namescript"></div>
+  <div class="main">
+    <div class="frame">
+      <div class="a1">
         <div class="info1">
           <div class="myImage">
-          <img src="img/me.png" class="me">
-          <img src="img/me.png" class="meBack">
+            <img src="img/me.png" class="me">
+            <img src="img/me.png" class="meBack">
           </div>
           <div class="info1_1">
-          <img src="img/school.png" class="icon">
-          <h4><b>中原大學-資管系</b></h4>
-          <p><b>CYIM</b></p>
-        </div>
+            <center>
+              <img src="img/school.png" class="icon">
+              <h4><b>中原大學-資管系</b></h4>
+              <p><b>CYIM</b></p>
+            </center>
+          </div>
         </div>
         <div class="info2">
-        <div class="card">
-          <h5 class="card-header "><img src="img/contact.png" class="icon"><b>聯絡資訊  Contact Info</b></h5>
-          <div class="contact">
-            <p><b>聯絡電話  Phone:</b><br>+886 970080998<br><br><b>E-mail: </b><br>schen38@mail.greenriver.edu</p>
-            <hr color="#dddddd">
-            <div class="git">
-              <img src="img/github.png" class="icon">
-              <a href="https://github.com/schen38" class="btn btn-info"><center><b>My    Github</b></center></a>
+          <center>
+            <div class="card">
+              <h5 class="card-header "><img src="img/contact.png" class="icon"><b>聯絡資訊  Contact Info</b></h5>
+              <div class="contact">
+                <p><b>聯絡電話  Phone:</b><br>+886 970080998<br><br><b>E-mail: </b><br>schen38@mail.greenriver.edu</p>
+                <hr color="#dddddd">
+                <div class="git">
+                  <img src="img/github.png" class="icon">
+                  <a href="https://github.com/schen38" class="btn btn-info"><center><b>My    Github</b></center></a>
+                </div>
+              </div>
+            </div>
+          </center>
+        </div>
+        <div class="info3" id="info3">
+          <center><img src="img/aboutme.png" class="icon"></center>
+          <center><p><b>下拉查看關於我 Drop Down For My Personality</b></p></center>
+          <center><hr color="#dddddd">
+            <br>
+            <div class="rotate">
+              <span class="arrow" onclick="toggle(this)" data-toggle="collapse" data-target="#collapse"> 
+              </span>
+            </div>
+          </center>
+          <div id="collapse" class="collapse">
+            <br>
+            <br>
+            <p><b>關於我   About Me</b></p>
+            <p>個性不算外向，但樂於與人交談，享受完成程式後那種立即的成就感，希望能將創意、個人特色及程式能力結合，把腦袋中有趣的主題，用程式將思維呈現出來；喜歡跳脫舒適圈，那種不確定性且冒險的過程，才能透過自己的努力達成自己想要的結果，樂於嘗試不同的挑戰、學習新知識，平常透過閱讀英文文章及影片（CNN、TedTalk等）練習英文、透過閱讀網路文章、部落格(Finlab、Medium等)學習程式方面的新知識，不斷努力精進自我。
+            </p>
+            <br>
+            <div class="card">
+              <p class="card-header"><img src="img/hobby.jpg" class="icon"><b>興趣嗜好  Passion & Hobbies</b></p>
+              <div>
+                <div class="divH"><p><img src="img/reading.png" class="hobby">Reading</p></div> 
+                <div class="divH"><p><img src="img/code.png" class="hobby">Coding Life</p></div>
+                <div class="divH"><p><img src="img/basketball.png" class="hobby">Basketball</p></div> 
+                <div class="divH"><p> <img src="img/poolball.jpg" class="hobby">Pool Ball</p></div>
+                <div class="divH"><p><img src="img/rap.png" class="hobby">Music</p></div>
+                <div class="divH"><p><img src="img/traveling.jpg" class="hobby">Traveling</p></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="info3" id="info3">
-          <center><img src="img/aboutme.png" class="icon"></center>
-          <center><p><b>下拉查看關於我 Drop Down For My Personality</b></p></center>
-          <center><hr color="#dddddd">
-          <br>
-          <div class="rotate">
-            <span class="arrow" onclick="toggle(this)" data-toggle="collapse" data-target="#collapse"> 
-            </span>
+      <hr color="#030305">
+      <a href="#top"><img src="img/top.png" class="top"></a>
+      <div class="a2Left">
+        <div class="skill1">
+          <img src="img/codingicon.png" class="icon">
+          <p><b>Programming    Skills</b></p>
+          <h5><b>程式技能</b></h5>
+        </div>
+        <hr color="#dddddd">
+        <hr color="#dddddd">
+        <div class="percent">
+          <div class="codeweb">
+            <p><b>網頁相關</b></p>
+            <br>
+            <div class="codingSkill">
+              <p><b>HTML/CSS</b></p>
+              <p>網站製作、排版、W3C、Bootstrap、CSS Animation、Filter、Transform等各應用。</p>
+              <div class="Chart">
+                <div class="circleChart" id="0"></div>
+              </div>
+            </div>
+            <div class="codingSkill"> 
+              <p><b>JavaScript/jQuery</b></p></center>
+              <p>了解基礎語法、網頁功能撰寫，例如購物車Cookie建立、讀取、刪除、控制，另外還有修改CSS、onclick、及Toggle等各應用。</p>
+              <div class="Chart">
+                <div class="circleChart" id="2"></div>
+              </div>
+            </div>
+            <div class="codingSkill">
+              <p><b>Wordpress</b></p>
+              <p>自己有使用阿里雲ECS架設wordpress.org版本，自行設計網頁，其中也包括Linux cmd語法操作、後台資料庫修改等，亦有使用wordpress.com版本幫他人架設個人食品網頁。</p>
+              <div class="Chart">
+                <div class="circleChart" id="1"></div>
+              </div>
+            </div>
+            <div class="codingSkill">
+              <p><b>Node.js/React.js</b></p></center>
+              <p>於中原108-2學期參加企業資源規劃課程，該課程與大陸用有雲合作，授課內容包括前後端（react.js、node.js及eclipse)，學習架設基本的企業後台操作網頁，包括新增、修改、刪除、查詢等基本功能。</p>
+              <div class="Chart">
+                <div class="circleChart" id="3"></div>
+              </div>
+            </div>
           </div>
-          </center>
-      <div id="collapse" class="collapse">
-        <br>
-          <p><b>關於我   About Me</b></p>
-          <p>個性外向，樂於與人交談，但也享受宅在家完成程式後的成就感，嘗試將創意、個人特色及程式能力結合，將想到或看到有趣的主題，用程式將邏輯及思維呈現出來；喜歡跳脫舒適圈，嘗試不同的挑戰，平常自己學習新知識，包括進階前端(Node、React、Vue、Sass、Compass)、SEO等知識，閱讀英文文章及影片(TedTalk、CNN、)、Python與爬蟲、機器學習應用(Finlab)，APP製作、Swift(Stanford CS193P課程影片)，以及任何相關趨勢或知識(Medium網站等)，邊學邊做，嘗試填滿生活來精進自我。
-          </p>
+          <hr color="#dddddd">
+          <div class="codelanguage">
+            <p><b>程式語言</b></p>
+            <br>
+            <div class="codingSkill">
+              <p><b>Python</b></p>
+              <p>了解基礎程式語法應用、爬取網站資料加以應用及畫圖、分析等。</p>
+              <div class="Chart">
+                <div class="circleChart" id="4"></div>
+              </div>
+            </div>
+            <div class="codingSkill">
+              <p><b>Visual Studio/Unity</b></p>
+              <p>了解各C語言語法應用、Unity VR/AR設計、腳本撰寫、API連結應用等。</p>
+              <div class="Chart">
+                <div class="circleChart" id="5"></div>
+              </div>
+            </div>
+            <div class="codingSkill">
+              <p><b>JAVA/Android Studio</b></p>
+              <p>了解基礎程式語法應用、Android APP基本開發，包括QR Code產生、掃描、NavBar等等。</p>
+              <div class="Chart">
+                <div class="circleChart" id="6"></div>
+              </div>
+            </div>
+            <div class="codingSkill">
+              <p><b>Swift Xcode</b></p>
+              <p>於中原107-2學期參與ios程式設計課程，另外也透過Stanford的cs193p課程影片自學，成果包括基本的翻卡牌遊戲、</p>
+              <div class="Chart">
+                <div class="circleChart" id="7"></div>
+              </div>
+            </div>
+          </div>
+          <hr color="#dddddd">
+          <div class="codedb">
+            <p><b>資料庫</b></p>
+            <br>
+            <div class="codingSkill">
+              <p><b>MySQL</b></p>
+              <p>網頁、APP/Android Studio資料庫連接、資料儲存、讀取等、資料庫程式語法撰寫、正規化概念。</p>
+              <div class="Chart">
+                <div class="circleChart" id="8"></div>
+              </div>
+            </div>
+            <div class="codingSkill">
+              <p><b>Firebase</b></p>
+              <p>與Android Studio連結、資料庫、登入註冊等功能使用。</p>
+              <div class="Chart">
+                <div class="circleChart" id="9"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr color="#dddddd">
+        <div class="skills">
+          <img src="img/otherskill.png" class="icon">
+          <p><b>Other Skills</b></p>
+          <h5><b>其他技能</b></h5>
           <br>
+          <p><b>SEO</b></p>
+          <p>Google GA、</p>
+          <div class="scontainer">
+            <div class="skill"><p></p></div>
+          </div>
+          <p>80%</p>
+          <br>
+          <p><b>Adobe Photoshop / Illustrator</b></p>
+          <p>圖片、插圖、海報設計</p>
+          <div class="scontainer">
+            <div class="skill"><p></p></div>
+          </div>
+          <p>80%</p>
+        </div>
+        <hr color="#dddddd">
+        <div class="skills">
+          <img src="img/english.png" class="icon">
+          <p><b>English Proficiency</b></p>
+          <h5><b>英文相關</b></h5><br>
+          <p><b>IELTS    :</b>    6.0</p>
+          <p><b>GRE    :</b>V+Q    314     ,    AWA    3.5</p>
+        </div>
+      </div>
+      <div class="a2Right">
+        <h4><b><img src="img/education.jpg" class="icon">求學經歷  Experiences</b></h4>
+        <hr color="#dddddd"><hr color="#dddddd">
+        <br>
+        <p><b>課程、社團、校內活動</b><p>
+        <div class="timeline">
+          <div class="tcontainer tright">
+            <div class="content2">
+              <p><b>2019/09-2020/01</b></p>
+              <img src="img/certificatesa.jpg" class="certificate">
+              <p><b>銀髮社群</b></p>
+              <p>於中原大學資管系的系統分析與設計課程，與銀髮族協會合作並撰寫幫助銀髮族聚會的app，於系內班際競賽中贏過隔壁班獲勝。</p>
+            </div>
+          </div>
+          <div class="tcontainer tleft">
+            <div class="content1">
+              <p><b>2019/02-2019/06</b></p>
+              <img src="img/certificates.jpg"  class="certificate">
+              <p><b>軟體專案管理課程夜市擺攤活動</b></p>
+              <p>修讀中原大學資管系的軟體專案管理課程，於期末舉辦夜市擺攤活動，試著讓當地居民及逛夜市的人們體驗科技對於生活所帶來的改變，我們所推出的夜市科技雷射槍，透過程式碼能輕易改變遊戲規則、標靶角度等，獲得熱烈好評，並於共25組的競賽中滿意度問卷調查及參與人數獲得第三名。</p>
+            </div>
+          </div>
+          <div class="tcontainer tright">
+            <div class="content2">
+              <p><b>2018/09-2019/01</b></p>
+              <img src="img/certificatem.jpg" class="certificate">
+              <p><b>真善美社會福利基金</b></p>
+              <p>於中原大學資管系的第一學期，修讀管理學課程，參與志工服務，幫助真善美社會福利基金會內的憨兒小朋友們(輕-中度)體驗我們所規劃的活動，盡可能的幫助這個族群，也對於這個族群有更多的認識。</p>
+            </div>
+          </div>
+          <br>
+          <div class="tcontainer tleft">
+            <div class="content3">
+              <p><b>2016/09-2017/08</b></p>
+              <img src="img/tca.jpg" class="certificate">
+              <p><b>台灣文化社    TCA</b></p>
+              <p>就讀於華盛頓州Green River College擔任台灣文化社PR，向各地推廣並介紹台灣文化，期間推動各大節慶活動，包括包水餃、中秋烤肉、雙十活動、農曆新年團圓火鍋等等，也帶領學生參與華盛頓大學舉辦的夜市活動，除了學會與世界各地的人打交道，也讓人們有機會能夠參與並認識台灣的文化。  </p>
+            </div>
+          </div>
+          <div class="tcontainer tright">
+            <div class="content4">
+              <p><b>2016/09-2017/06</b></p>
+              <img src="img/tca.jpg" class="certificate">
+              <p><b>Green River College校內5vs.5籃球比賽</b></p>
+              <p>於華盛頓州Green River College，參與校內5 vs. 5籃球比賽奪得冠軍，獲得學校吉祥物鱷魚T-shirt。</p>
+            </div>
+          </div>
+        </div>
+        <hr color="#dddddd">
+        <br><br>
         <div class="card">
-          <p class="card-header"><img src="img/hobby.jpg" class="icon"><b>興趣嗜好  Passion & Hobbies</b></p>
-          <div>
-            <div class="divH"><p><img src="img/reading.png" class="hobby">Reading</p></div> 
-            <div class="divH"><p><img src="img/code.png" class="hobby">Coding Life</p></div>
-            <div class="divH"><p><img src="img/basketball.png" class="hobby">Basketball</p></div> 
-            <div class="divH"><p> <img src="img/poolball.jpg" class="hobby">Pool Ball</p></div>
-            <div class="divH"><p><img src="img/rap.png" class="hobby">Rap/R&B/Soul Music </p></div>
-            <div class="divH"><p><img src="img/traveling.jpg" class="hobby">Traveling</p></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <hr color="#030305">
-    <div class="a2Left">
-  		<div class="skill1">
-  			<img src="img/codingicon.png" class="icon">
-  			<p><b>Programming    Skills</b></p>
-  			<h5><b>程式技能</b></h5>
-  		</div>
-      <hr color="#dddddd">
-      <hr color="#dddddd">
-  		<div class="percent">
-        <div class="codeweb">
-        <p><b>網頁相關</b></p>
-        <br>
-  			<div class="codingSkill">
-  				<p><b>HTML/CSS</b></p>
-  				<p>網站製作、排版、W3C、 Bootstrap、CSS Animation、Filter、Transform等各應用。</p>
-          <div class="Chart">
-  				  <div class="circleChart" id="0"></div>
-          </div>
-  			</div>
-  			<div class="codingSkill"> 
-  				<p><b>JavaScript/jQuery</b></p></center>
-  				<p>了解基礎語法、網頁功能撰寫，例如購物車Cookie建立、讀取、刪除、控制及修改CSS、onclick、及Toggle等各應用。</p>
-          <div class="Chart">
-  				  <div class="circleChart" id="2"></div>
-          </div>
-  			</div>
-        <div class="codingSkill">
-          <p><b>Sass、Compass</b></p>
-          <p>努力學習中...!</p>
-          <div class="Chart">
-            <div class="circleChart" id="1"></div>
-          </div>
-        </div>
-        <div class="codingSkill">
-          <p><b>Node.js</b></p></center>
-          <p>努力學習中...!</p>
-          <div class="Chart">
-            <div class="circleChart" id="3"></div>
-          </div>
-        </div>
-      </div>
-      <hr color="#dddddd">
-      <div class="codelanguage">
-        <p><b>程式語言</b></p>
-        <br>
-  			<div class="codingSkill">
-  				<p><b>Python</b></p>
-  				<p>了解基礎程式語法應用、爬取網站資料加以應用及畫圖、分析等，仍在努力學習機器學習方面。</p>
-          <div class="Chart">
-  				  <div class="circleChart" id="4"></div>
-          </div>
-  			</div>
-  			<div class="codingSkill">
-  				<p><b>Visual Studio/Unity</b></p>
-  				<p>了解各C語言語法應用、Unity VR/AR設計、腳本撰寫、API連結應用等。</p>
-          <div class="Chart">
-  				  <div class="circleChart" id="5"></div>
-          </div>
-  			</div>
-        <div class="codingSkill">
-          <p><b>JAVA/Android Studio</b></p>
-          <p>了解基礎程式語法應用、Android APP基本開發，包括QR Code產生、掃描、NavBar等等。</p>
-          <div class="Chart">
-            <div class="circleChart" id="6"></div>
-          </div>
-        </div>
-        <div class="codingSkill">
-          <p><b>Swift Xcode</b></p>
-          <p>努力學習中...!</p>
-          <div class="Chart">
-            <div class="circleChart" id="7"></div>
-          </div>
-        </div>
-      </div>
-      <hr color="#dddddd">
-      <div class="codedb">
-        <p><b>資料庫</b></p>
-        <br>
-  			<div class="codingSkill">
-  				<p><b>MySQL</b></p>
-  				<p>網頁、APP/Android Studio資料庫連接、資料儲存、讀取等、資料庫程式語法撰寫、正規化概念。</p>
-          <div class="Chart">
-  				  <div class="circleChart" id="8"></div>
-          </div>
-  			</div>
-        <div class="codingSkill">
-          <p><b>Firebase</b></p>
-          <p>與Android Studio連結、資料庫、登入註冊等功能使用。</p>
-          <div class="Chart">
-            <div class="circleChart" id="9"></div>
-          </div>
-        </div>
-		  </div>
-    </div>
-		  <hr color="#dddddd">
-		  <div class="skills">
-			 <img src="img/otherskill.png" class="icon">
-  			<p><b>Other Skills</b></p>
-  			<h5><b>其他技能</b></h5>
-        <br>
-    		<p><b>Adobe Photoshop / Illustrator</b></p>
-    		<p>圖片、插圖、海報設計</p>
-        <p>80%</p>
-    		<div class="scontainer">
-      		<div class="skill"><p></p></div>
-    		</div>
-      </div>
-    		<hr color="#dddddd">
-      <div class="skills">
-    		<img src="img/english.png" class="icon">
-    		<p><b>English Proficiency</b></p>
-    		<h5><b>英文相關</b></h5><br>
-    		<p><b>IELTS    :</b>    6.0</p>
-    		<p><b>GRE    :</b>V+Q    314     ,    AWA    3.5</p>
-    	</div>
-    </div>
-    <div class="a2Right">
-      <h4><b><img src="img/education.jpg" class="icon">求學經歷  Experiences</b></h4>
-      <hr color="#dddddd"><hr color="#dddddd">
-      <br>
-      <p><b>課程/社團企劃、校內活動</b><p>
-  		<div class="timeline">
-  			<div class="tcontainer tleft">
-    			<div class="content1">
-            <p><b>2019/02-2019/06</b></p>
-            <img src="img/certificates.jpg"  class="certificate">
-            <p>修讀中原大學資管系的軟體專案管理課程，於期末舉辦夜市擺攤活動，試著讓當地居民及逛夜市的人們體驗科技對於生活所帶來的改變，我們所推出的夜市科技雷射槍，透過程式碼能輕易改變遊戲規則、標靶角度等，獲得熱烈好評，並於共25組的競賽中滿意度問卷調查及參與人數獲得第三名。</p>
-    			</div>
-  			</div>
-  			<div class="tcontainer tright">
-    			<div class="content2">
-            <p><b>2018/09-2019/01</b></p>
-            <img src="img/certificatem.jpg" class="certificate">
-            <p><b>真善美社會福利基金</b></p>
-            <p>於中原大學資管系的第一學期，修讀管理學課程，參與志工服務，幫助真善美社會福利基金會內的憨兒小朋友們(輕-中度)體驗我們所規劃的活動，盡可能的幫助這個族群，也對於這個族群有更多的認識。</p>
-    			</div>
-  			</div>
-  			<div class="tcontainer tleft">
-          <div class="content3">
-            <p><b>2016/09-2017/08</b></p>
-            <img src="img/tca.jpg" class="certificate">
-            <p><b>台灣文化社    TCA</b></p>
-            <p>就讀於華盛頓州Green River College擔任台灣文化社PR，向各地推廣並介紹台灣文化，期間推動各大節慶活動，包括包水餃、中秋烤肉、雙十活動、農曆新年團圓火鍋等等，也帶領學生參與華盛頓大學舉辦的夜市活動，除了學會與世界各地的人打交道，也讓人們有機會能夠參與並認識台灣的文化。</p>
-          </div>
-  			</div>
-        <div class="tcontainer tright">
-          <div class="content4">
-            <p><b>2016/09-2017/06</b></p>
-            <p>於華盛頓州Green River College，參與校內5 vs 5籃球比賽獲得冠軍殊榮。<br>(但沒有獎狀，只有一件綠河T-shirt...)</p>
-          </div>
-        </div>
-  		</div>
-      <hr color="#dddddd">
-      <br><br>
-      <div class="card">
           <h5 class="card-header "><b>學歷Education</b></h5>
           <div class="contact">
             <p><b>大學(大三、大四):</b><br>中原大學 Chung Yuan Christian University <br><br>
-            <b>大學(高三、大一、大二):</b><br>綠河社區大學 Green River College<br><br>
-            <b>國中、高中:</b><br>復旦高中 Fudan High School
+              <b>大學(高三、大一、大二):</b><br>綠河社區大學 Green River College<br><br>
+              <b>國中、高中:</b><br>復旦高中 Fudan High School
             </p>
           </div>
         </div>
+      </div>
     </div>
-	</div>
-</div>
-<div class="footer">
-  <center><p>
-    <b>Tel：+886-970080998 │ E-mail：schen38@mail.greenriver.edu</b>
-    <br><a href="mailto:schen38@mail.greenriver.edu"><img src="img/email.png" class="email"></a>
-    <a href="https://github.com/schen38"><img src="img/github.png" class="email"></a>
-  </p></center>
-</div>
+  </div>
+  <div class="footer">
+    <center><p>
+      <b>Tel：+886-970080998 │ E-mail：schen38@mail.greenriver.edu</b>
+      <br><a href="mailto:schen38@mail.greenriver.edu"><img src="img/email.png" class="email"></a>
+      <a href="https://github.com/schen38"><img src="img/github.png" class="email"></a>
+    </p></center>
+  </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
