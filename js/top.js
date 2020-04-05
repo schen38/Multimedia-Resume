@@ -4,7 +4,7 @@ $(window).scroll(function(){
     if (shouldBeVisible && !isVisible) {
         isVisible = true;
         $('.top').css('visibility','visible');
-        $('.top').fadeIn(350);
+        $('.top').fadeIn(300);
     } else if (isVisible && !shouldBeVisible) {
         isVisible = false;
         $('.top').hide();
