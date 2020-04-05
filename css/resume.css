@@ -1,22 +1,23 @@
 <style>
-	*{
+	*, html{
 		font-family: Microsoft JhengHei; 
 		text-decoration: none;
-		font-size: 20em;
+	}
+	@media screen and (min-width: 551px) {
+		*, html{
+			font-size: 14px;
+		}
 	}
 	body{
 		background: #adbed2;
     	color: #030305;
     }
-  	.divName{
-    	width: 100%;
-   	 	max-width:100%;
-    	height: 5em;
-    	background-color: #ffffff;
-  	}
-  	.top{
-  		max-width:2.5em;
-  		max-height:2.5em;
+    .top{
+    	visibility: hidden;
+    }
+  	.top img{
+  		max-width:2em;
+  		max-height:2em;
   		position: fixed;
   		top:91vh;
   		left: 91vw;
@@ -27,32 +28,37 @@
     	height: 6em;
     	margin-bottom: 0;
     	background-color: #ffffff;
-    	padding-top: 0.7em;
+    	padding-top: 0.6em;
   	}
   	.email{
     	width: 2em;
     	height: 2em;
-    	margin: 0.5em 0.5em 0 0.5em;
+    	margin: 0.4em 0.4em 0 0.4em;
+  	}
+  	.divName{
+    	width: 100%;
+   	 	max-width:100%;
+    	height: 5em;
+    	background-color: #ffffff;
   	}
   	.nameM{
-    	margin: 0 0 0 29em;
+    	margin: 0 0 0 23.5em;
     	height: 4.5em;
   	}
   	.namescript{
   		margin-top:0.2em;
-  		height: 4.5em;
-    	width: 11em;
-    	max-width: 11em;
+  		height: 3.5em;
+    	width: 9.5em;
+    	max-width: 9.5em;
   	}
-
 	.main{
 		margin: 2em auto ;
 		background-color: white;
     	border:1px solid #f2f4ef;
-		max-width: 70vw;
+		max-width: 75vw;
 	}
 	.frame{
-		 margin: 0px auto;
+		margin: 0px auto;
   		text-align: center;
   		font-weight: 500;
 	}
@@ -63,7 +69,7 @@
   	.a1{
     	width: 100%;
     	max-width: 100%;
-    	padding-top: 2.5em;
+    	padding-top: 2em;
     	transition: height 2s;
     	background: #ffffff;
   	}
@@ -98,8 +104,8 @@
     	border-radius: 50%;
   	}
   	.info1{
-    	width:40%;
-    	max-width: 40%;
+    	width:45%;
+    	max-width: 45%;
     	text-align: left;
   	}
   	.info1_1{
@@ -108,11 +114,9 @@
     	max-width: 50vmax;
   	}
   	.info2{
-    	margin-top:1em;
-    	margin-right: 4em;
-    	width:21em;
-    	max-width: 21em;
-    	text-align: left;
+    	margin-top:2em;
+    	width:22em;
+    	max-width: 22em;
   	}
   	.contact{
     	width: 90%;
@@ -127,6 +131,7 @@
 	}
   	.card-header{
     	background: #f2f4ef;
+    	width: 100%;
   	}
   	.info3{
     	overflow: hidden;
@@ -185,8 +190,8 @@
 		margin-bottom: 1.1em;
 	}
   	.icon{
-    	width: 2.2em;
-    	height: 2.2em;
+    	width: 2.5em;
+    	height: 2.5em;
     	margin: 0.5em;
   	}
   	.divH{
@@ -198,41 +203,41 @@
     	margin: 0.6em;
   	}
   	.percent{
-    	margin: 2.1em auto;
+    	margin: 1.5em auto;
     	width:100%;
     	max-width: 100%;
   	}
   	.codingSkill{
-    	width:11em;
+    	width:10em;
     	margin: 0em 1.6em 2.1em 0.5em;
   	}
 	.skill1{
     	max-width: 80%;
     	width: 80%;
-		margin-top: 1.1em;
+		margin-top: 1em;
 	}
   	.skills{
    	 	max-width: 80%;
     	width: 80%;
-    	margin-top: 1.1em;
+    	margin-top: 1em;
     	margin-bottom: 2em;
   	}
   	.Chart div{
-    	width: 3.7em;
-    	max-width: 3.7em;
-    	height: 3.7em;
-    	max-height: 3.7em;
+    	width: 4em;
+    	max-width: 4em;
+    	height: 4em;
+    	max-height: 4em;
   	}
 	.scontainer {
-		height:1.1em;
-  		background-color: #f2f4ef;
+		height:1.3em;
+  		background-color: #dcdcdc;
   		width: 100%;
   		margin: 0 auto;
   		text-align: left;
     	font-size: 0.8em;
 	}
 	.skill {
-    	height:1.1em;
+    	height:1em;
  		text-align: right;
   		color: white;
  		max-width: 80%;
@@ -255,15 +260,15 @@
   		position: relative;
   		max-width: 100%;
       	width: 100%;
-  		margin: 1.5em auto 3em auto;
-      	height: 120em;
+  		margin: 2em auto 3em auto;
+      	height: 125em;
       	max-height: 140em;
       	z-index: 0;
 	}
 	.timeline::after {
   		content: '';
   		position: absolute;
-  		width: 0.2em;
+  		width: 0.1em;
   		background-color: #030305;
   		top: 0;
   		bottom: 0;
@@ -274,17 +279,17 @@
 	.tcontainer {
   		position: relative;
   		width: 50%;
-      	height: 21em;
+      	height: 25em;
 	}
 	.tcontainer::after {
   		content: '';
   		position: absolute;
-  		width: 1.5vmax;
-  		height: 1.5vmax;
-  		right: -1vmax;
+  		width: 1.5em;
+  		height: 1.5em;
+  		right: -1em;
   		background-color: white;
-  		border: 0.26vmax solid #00aacc;
-  		top: 0.9vmax;
+  		border: 0.3em solid #00aacc;
+  		top: 1em;
   		border-radius: 50%;
   		z-index: 0;
 	}
@@ -331,7 +336,7 @@
   		border-radius: 0.4em;
       	max-width: 100%;
 	}
-  	.content2, .content4 {
+  	.content0, .content2, .content4 {
       	visibility: hidden;
       	margin-left: 2.1em;
       	padding: 1.3em 1.1em;
@@ -342,10 +347,10 @@
   	}
   	.certificate{
     	filter: grayscale(0.1); 
-    	border:0.8em solid #ffffff;
+    	border:0.5em solid #ffffff;
     	border-radius: 2px;
    		margin: 1.1em auto;
-    	width: 8vmax;
+    	width: 9em;
     	height: 12em;
     	transition: all 1.5s ease;
   	}
