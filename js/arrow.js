@@ -4,11 +4,11 @@ var info3 = document.getElementById('info3')
   })
   $(".arrow").click(function(){
     $("collapse").toggle();                 
-    if(info3.style.heigh = "10vmax"){
+    if(info3.style.heigh = "13em"){
       info3.style.height="100%";
     }
     if(info3.style.height="100%"){  
-      info3.style.heigh="10vmax";
+      info3.style.heigh="14em";
     }
 
   });
