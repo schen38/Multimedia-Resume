@@ -1,12 +1,8 @@
-var isVisible = false;
 $(window).scroll(function(){
     var shouldBeVisible = $(window).scrollTop()>250;
-    if (shouldBeVisible && !isVisible) {
-        isVisible = true;
-        $('.top').css('visibility','visible');
-        $('.top').fadeIn(300);
-    } else if (isVisible && !shouldBeVisible) {
-        isVisible = false;
+    if (shouldBeVisible) {
+        $('.top').css({visibility:'visible'}).show({fadeIn:'500'});
+    } else if (!shouldBeVisible) {
         $('.top').hide();
     }
 });
