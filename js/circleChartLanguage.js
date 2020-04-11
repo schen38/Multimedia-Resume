@@ -1,6 +1,6 @@
 $(window).on('scroll',function() {
-  var hT1 = $('.skill1').offset().top,
-    hH1 = $('.skill1').outerHeight(),
+  var hT1 = $('.content1').offset().top,
+    hH1 = $('.content1').outerHeight(),
     wH1 = $(window).height(),
     wS1 = $(this).scrollTop();
     if (wS1 > (hT1+hH1-wH1) && (hT1 > wS1) && (wS1+wH1 > hT1+hH1)){      
@@ -23,7 +23,7 @@ $(window).on('scroll',function() {
       });
       $(".circleChart#6").circleChart({
         size: 50,
-        value: 80,
+        value: 75,
         text: 0,
         onDraw: function(el, circle) {
           circle.text(Math.round(circle.value) + "%");
@@ -32,10 +32,10 @@ $(window).on('scroll',function() {
 
       $(".circleChart#7").circleChart({
         size: 50,
-        value: 50,
+        value: 60,
         text: 0,
         onDraw: function(el, circle) {
-          circle.text(Math.round(circle.value) + "...%");
+          circle.text(Math.round(circle.value) + "%");
         }
       });
     }
