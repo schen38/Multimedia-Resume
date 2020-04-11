@@ -1,26 +1,17 @@
 <style>
-	*, html{
-		font-family: Microsoft JhengHei; 
-		text-decoration: none;
-	}
 	@media screen and (min-width: 551px) {
 		*, html{
 			font-size: 14px;
 		}
 	}
-	body{
-		background: #adbed2;
-    	color: #030305;
-    }
-    .top{
-    	visibility: hidden;
-    }
   	.top img{
   		max-width:2em;
   		max-height:2em;
   		position: fixed;
   		top:91vh;
   		left: 91vw;
+  		box-shadow:2px 2px 1px 1px grey;
+  		border-radius: 50%;
   	}
   	.footer{
     	width: 100%;
@@ -29,6 +20,7 @@
     	margin-bottom: 0;
     	background-color: #ffffff;
     	padding-top: 0.6em;
+    	box-shadow:1px 1px 2px 1px grey;
   	}
   	.email{
     	width: 2em;
@@ -40,6 +32,7 @@
    	 	max-width:100%;
     	height: 5em;
     	background-color: #ffffff;
+    	box-shadow:1px 1px 2px 2px grey;
   	}
   	.nameM{
     	margin: 0 0 0 23.5em;
@@ -61,6 +54,7 @@
 		margin: 0px auto;
   		text-align: center;
   		font-weight: 500;
+  		box-shadow:7px 7px 3px 4px grey;
 	}
 	.frame div{
 	 	display: inline-block;
@@ -75,48 +69,34 @@
   	}
   	.myImage{
     	margin-top: 1.5em;
-    	width:15em;
-    	height:15em;
-    	max-width: 15em;
-    	max-height: 15em;
+    	width:17em;
+    	height:17em;
+    	max-width: 17em;
+    	max-height: 17em;
   	}
 	.me{
     	-webkit-filter:saturate(115%) grayscale(5%);
     	filter:saturate(115%) grayscale(5%);
-    	position:absolute;
-    	float: left;
-    	margin: -0.6em 4.5em 1em 4.5em;
 		width:17em;
 		height:17em;
 		border-radius: 50%;
-		border: 0.1em solid #030305;
     	z-index: 2;
+    	border:1px solid grey;
+    	box-shadow:2px 2px 3px 2px #555;
 	}
-  	.meBack {
-    	-webkit-filter:blur(10px);
-    	filter: blur(10px);
-    	position:absolute;
-    	z-index: 1;
-    	float: left;
-    	margin: -0.6em 4.5em;
-    	width:17em;
-    	height:17em;
-    	border-radius: 50%;
-  	}
   	.info1{
-    	width:45%;
-    	max-width: 45%;
-    	text-align: left;
+    	width:30%;
+    	max-width: 30%;
+    	text-align: center;
+    	margin-right: 5em;
   	}
   	.info1_1{
-    	margin: 2em 6em 0 6em;
-    	width: 50vmax
-    	max-width: 50vmax;
+    	margin: 2em auto 0 auto;
   	}
   	.info2{
-    	margin-top:2em;
-    	width:22em;
-    	max-width: 22em;
+    	margin: 2em auto 0 5em;
+    	width:25%;
+    	max-width: 25%;
   	}
   	.contact{
     	width: 90%;
@@ -128,6 +108,7 @@
 		max-width: 100%;
     	color:#030305;
     	background: #ffffff;
+    	box-shadow:1px 1px 2px 1px grey;
 	}
   	.card-header{
     	background: #f2f4ef;
@@ -166,18 +147,18 @@
     	transform:rotate(180deg);
   	}
   	.a2Left{
-    	margin:1.5em auto 1.5em 0;
+    	margin:2.5em auto 3em 3em;
     	text-align: left;
-    	padding-right: 4.5em;
-    	max-width:41%; 
-    	width:41%;
-    	border-right:1px solid #030305;
+    	padding-right: 3em;
+    	max-width:40%; 
+    	width:40%;
+    	border-right:1px solid #ccc;
   	}
   	.a2Right{
-    	text-align: left;
-    	margin:2.5em auto 2.5em 4.5em;
-    	max-width:35%; 
-    	width:35%;
+    	text-align: center;
+    	margin:3em ;
+    	max-width:40%; 
+    	width:40%;
   	}
   	.btn {
 		text-decoration:none;
@@ -240,8 +221,17 @@
     	height:1em;
  		text-align: right;
   		color: white;
- 		max-width: 80%;
-    	width: 80%; 
+ 		max-width: 70%;
+    	width: 70%; 
+    	background-color: #00aacc;
+    	animation-duration:2s;
+  	}
+  	.skill2 {
+    	height:1em;
+ 		text-align: right;
+  		color: white;
+ 		max-width: 65%;
+    	width: 65%; 
     	background-color: #00aacc;
     	animation-duration:2s;
   	}
@@ -260,8 +250,8 @@
   		position: relative;
   		max-width: 100%;
       	width: 100%;
-  		margin: 2em auto 3em auto;
-      	height: 125em;
+  		margin: 1em auto 3em auto;
+      	height: 140em;
       	max-height: 140em;
       	z-index: 0;
 	}
@@ -273,7 +263,6 @@
   		top: 0;
   		bottom: 0;
   		left: 50%;
-  		margin-left: -0.3em;
       	z-index: 0;
 	}
 	.tcontainer {
@@ -286,7 +275,6 @@
   		position: absolute;
   		width: 1.5em;
   		height: 1.5em;
-  		right: -1em;
   		background-color: white;
   		border: 0.3em solid #00aacc;
   		top: 1em;
@@ -294,19 +282,19 @@
   		z-index: 0;
 	}
 	.tleft {
-      left: -1.5%;
+      	left: -27.5%;
 	}
 	.tright {
-  		left: 50.5%;
+  		left: 26.5%;
 	}
 	.tleft::before {
   		content: " ";
   		height: 0;
  		position: absolute;
-  		top: 1.1em;
+  		top: 1.3em;
   		width: 0;
   		z-index: 0;
-  		right: 1.1em;
+  		right: 1em;
   		border: medium solid #030305;
   		border-width: 0.5em 0 0.5em 0.5em;
   		border-color: transparent transparent transparent #030305;
@@ -315,41 +303,47 @@
   		content: " ";
   		height: 0;
   		position: absolute;
-  		top: 1.1em;
+  		top: 1.3em;
   		width: 0;
   		z-index: 0;
-  		left: 1.1em;
+  		left: 1em;
   		border: medium solid #030305;
   		border-width: 0.5em 0.5em 0.5em 0;
   		border-color: transparent #030305 transparent transparent;
 	}
+	.tleft::after {
+  		left: 99.5%;
+      	z-index: 0;
+	}
 	.tright::after {
-  		left: -1.1em;
+  		left: -8.5%;
       	z-index: 0;
 	}
 	.content1, .content3 {
       	visibility: hidden;
-      	margin-right: 2.1em;
-  		padding: 1.3em 1.1em;
+      	margin-right: 2em;
+  		padding: 1.5em 1em;
   		background-color: #f2f4ef;
   		position: relative;
-  		border-radius: 0.4em;
+  		border-radius: 0.5em;
       	max-width: 100%;
+      	box-shadow:1px 1px 2px 1px grey;
 	}
   	.content0, .content2, .content4 {
       	visibility: hidden;
-      	margin-left: 2.1em;
-      	padding: 1.3em 1.1em;
+      	margin-left: 2em;
+      	padding: 1.5em 1em;
       	background-color: #f2f4ef;
       	position: relative;
-      	border-radius: 0.4em;
+      	border-radius: 0.5em;
       	max-width: 100%;
+      	box-shadow:1px 1px 2px 1px grey;
   	}
   	.certificate{
     	filter: grayscale(0.1); 
-    	border:0.5em solid #ffffff;
+    	box-shadow:2px 2px 2px 2px #666;
     	border-radius: 2px;
-   		margin: 1.1em auto;
+   		margin: 1em auto;
     	width: 9em;
     	height: 12em;
     	transition: all 1.5s ease;
@@ -363,8 +357,17 @@
 		html{
 			width:100%;
 		}
+		h3{
+			font-size:1.4em;
+		}
+		h4{
+			font-size:1.3em;
+		}
+		h5{
+			font-size:1.2em;
+		}
 		.nameM{
-    		margin: 0 0 0 12em;
+    		margin: 0 0 0 4.5em;
     	}
     	.a1{
     		text-align: center;
@@ -372,13 +375,30 @@
     	.info1{
     		width: 100%;
     		max-width: 100%;
+    	}
+    	.info1 div:nth-child(1){
     		order:1;
+    		margin-bottom: 2em;
+    		text-align: center;
+    	}
+    	.info1 div:nth-child(2){
+    		order:2;
+    		width: 85%;
+    		max-width: 85%;
+    		text-align: center;
     	}
     	.info2{
     		align-self: center;
     		width: 80%;
     		max-width: 80%;
-    		order:2;
+    		margin-bottom: 2em;
+    	}
+    	.git a{
+    		height: 2.2em;
+    		font-size: 8px;
+    	}
+    	.contact{
+    		height:14em;
     	}
     	.footer{
       		height: 10em;
@@ -387,7 +407,7 @@
       		height: 250em;
     	}
   		.timeline::after {
-  			left: 2em;
+  			text-align: center;
       		z-index: 0;
   		}
     	.tcontainer {
