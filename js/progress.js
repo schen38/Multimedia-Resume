@@ -1,9 +1,10 @@
-  $(window).scroll(function(){
-  var hT = $('.skill').offset().top,
-    hH = $('.skill').outerHeight(),
-    wH = $(window).height(),
-    wS = $(this).scrollTop();
-    if ((wS+wH) > (hT+hH)){
+$(window).scroll(function(){
+  	var shouldBeVisible5 = $(window).scrollTop()>2200;
+  	if (shouldBeVisible5 ) {
         $(".skill").addClass("run");
+        $(".skill2").addClass("run");
+    }else if (!shouldBeVisible5) {
+    	$(".skill").removeClass("run");
+        $(".skill2").removeClass("run");
     }
 });
